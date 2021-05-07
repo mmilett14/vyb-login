@@ -1,5 +1,7 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins') /*Can't get font import to work */
+@import url('https://fonts.googleapis.com/css?family=Poppins'); 
 
+
+html,
 body {
   margin: 0;
   font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -7,6 +9,10 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
 }
 
 code {
