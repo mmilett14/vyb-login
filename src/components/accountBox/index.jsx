@@ -16,7 +16,7 @@ const BoxContainer = styled.div`
 
 const TopContainer = styled.div`
     width: 100%;
-    height: 250px;
+    height: 175px;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -47,11 +47,25 @@ const HeaderContainer = styled.h2`
 
 const HeaderText = styled.h2`
     font-size: 30px;
+    font-family: sans-serif;
     font-weight: 600;
     line-height: 1.24;
     color: #fff;
     z-index: 10;
     margin: 0;
+    margin-left: 25px;
+    
+`;
+
+const SmallText = styled.h5`
+    color: #fff;
+    font-weight: 500;
+    font-size: 13px;
+    font-family: sans-serif; 
+    z-index: 10;
+    margin: 0;
+    margin-left: 25px;
+    margin-top: 2px;
 `;
 
 export function AccountBox(props) {
@@ -61,6 +75,7 @@ export function AccountBox(props) {
             <HeaderContainer>
                 <HeaderText>Welcome</HeaderText>
                 <HeaderText>Back</HeaderText>
+                <SmallText>Vyb in bb!</SmallText> 
             </HeaderContainer>
         </TopContainer>
     </BoxContainer>
