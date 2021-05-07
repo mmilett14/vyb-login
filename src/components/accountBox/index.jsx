@@ -16,7 +16,7 @@ const BoxContainer = styled.div`
 
 const TopContainer = styled.div`
     width: 100%;
-    height: 175px;
+    height: 250px;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -47,7 +47,7 @@ const HeaderContainer = styled.h2`
 
 const HeaderText = styled.h2`
     font-size: 30px;
-    font-family: sans-serif;
+    font-family: 'Poppins';
     font-weight: 600;
     line-height: 1.24;
     color: #fff;
@@ -61,7 +61,7 @@ const SmallText = styled.h5`
     color: #fff;
     font-weight: 500;
     font-size: 13px;
-    font-family: sans-serif; 
+    font-family: 'Poppins'; 
     z-index: 10;
     margin: 0;
     margin-left: 25px;
