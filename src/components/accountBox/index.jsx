@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { LoginForm } from "./loginForm";
 
 const BoxContainer = styled.div`
     width: 280px;
@@ -68,15 +69,25 @@ const SmallText = styled.h5`
     margin-top: 2px;
 `;
 
+const InnerContainer = styled.div`
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0 1.8em;
+`;
+
 export function AccountBox(props) {
     return <BoxContainer>
         <TopContainer>
             <BackDrop />
             <HeaderContainer>
-                <HeaderText>Welcome</HeaderText>
-                <HeaderText>Back</HeaderText>
-                <SmallText>Vyb in bb!</SmallText> 
+                <HeaderText>Hiya</HeaderText>
+                <HeaderText>bb</HeaderText>
+                <SmallText>Log in to track yr vyb!</SmallText> 
             </HeaderContainer>
         </TopContainer>
+        <InnerContainer>
+            <LoginForm />
+        </InnerContainer>
     </BoxContainer>
 }
