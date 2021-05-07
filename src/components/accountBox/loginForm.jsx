@@ -1,8 +1,12 @@
-import React from "react";
+import React, { useContext } from "react";
 import { BoxContainer, FormContainer, Input, MutedLink, BoldLink, SubmitButton } from "./common";
 import { Marginer } from "../marginer";
+import { AccountContext } from "./accountContext";
 
 export function LoginForm(props) {
+
+    const { switchToSignup } = useContext(AccountContext);
+
     return <BoxContainer>
         <FormContainer>
             <Input type="email" placeholder="Vmail" />
@@ -14,7 +18,10 @@ export function LoginForm(props) {
         <SubmitButton type="submit">Vyb In</SubmitButton>
         <Marginer direction="vertical" margin="1.6em" />
         <MutedLink href="#">
-            First time vybing? <BoldLink href="#">Vyb up!</BoldLink>
+            First time vybing? {" "}
+            <BoldLink href="#" onClick={switchToSignup}>
+                Vyb up!
+                </BoldLink>
             </MutedLink>
     </BoxContainer>
 }
